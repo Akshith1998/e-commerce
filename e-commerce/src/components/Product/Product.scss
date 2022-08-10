@@ -1,0 +1,20 @@
+.sethover{
+    z-index: 999;
+    .hover{
+        opacity: 1 !important;
+        position: absolute;
+        top: 20vh;
+        left: 40vw;
+        border: 5px solid;
+        width: 300px;
+        .hoverHeading{
+            display: flex;
+            justify-content: space-around;
+        }
+        .hoverSection{
+            display: flex;
+        }
+        background-color: wheat
+        
+    }
+}

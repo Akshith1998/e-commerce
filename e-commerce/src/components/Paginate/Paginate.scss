@@ -1,0 +1,13 @@
+.paginate{
+    margin:50px 50px;
+    border: 1px solid;
+    width: max-content;
+    padding: 5px;
+    span{
+        cursor: pointer;
+        margin-left: 10px;
+        color: blue;
+        padding: 2px;
+        border: 1px solid black;
+    }
+}

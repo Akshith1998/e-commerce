@@ -1,20 +1,42 @@
 .sethover{
-    z-index: 999;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    background-color: rgb(33, 67, 67,0.5);
     .hover{
-        opacity: 1 !important;
         position: absolute;
-        top: 20vh;
+        top: 35vh;
         left: 40vw;
-        border: 5px solid;
+        border: none;
         width: 300px;
+        padding: 10px;
+        -webkit-box-shadow: 1px 0px 21px 4px rgba(0,0,0,0.77);
+        -moz-box-shadow: 1px 0px 21px 4px rgba(0,0,0,0.77);
+        box-shadow: 1px 0px 21px 4px rgba(0,0,0,0.77);
         .hoverHeading{
             display: flex;
             justify-content: space-around;
+            button{
+                margin-top: 15px;
+                width: 50px;
+                height: 30px;
+                background-color: rgba(0, 0, 255, 0.578);
+                color: white;
+                cursor: pointer;
+                border-radius: 5px;
+                border: none;
+            }
         }
         .hoverSection{
             display: flex;
+            img{
+                margin: 0 10px;
+            }
         }
-        background-color: wheat
-        
+        background-color: white;
     }
 }

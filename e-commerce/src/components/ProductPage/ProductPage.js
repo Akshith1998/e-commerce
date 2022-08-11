@@ -4,7 +4,6 @@ import Paginate from "../Paginate/Paginate";
 import Product from "../Product/Product";
 
 const ProductPage = () => {
-  const [dark, setDark] = useState(false);
   const [products, setProducts] = useState([]);
   const [allproducts, setAllproducts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
@@ -35,16 +34,6 @@ const ProductPage = () => {
     setProducts(selectedProducts);
   };
 
-  const handlehover = (val) => {
-    setDark(val);
-  };
-
-  if (dark) {
-    document.body.style = "opacity:0.7";
-  } else {
-    document.body.style = "background: white;";
-  }
-
   return (
     <div className="container">
       <h1>Available Products</h1>
@@ -58,7 +47,7 @@ const ProductPage = () => {
       </div>
       <div className="products">
         {currentProducts.map((item) => {
-          return <Product item={item} handlehover={handlehover} />;
+          return <Product item={item} />;
         })}
       </div>
       <Paginate
